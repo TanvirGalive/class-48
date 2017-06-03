@@ -1,0 +1,151 @@
+/* Base CSS */
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,600,600i,700,700i');
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:hover, a:focus{
+    text-decoration: none;
+}
+input:focus, textarea:focus, button:focus {outline: none}
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+}
+a:hover { text-decoration: none }
+
+
+.pricing-tables {
+    overflow: hidden;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 30px;
+}
+.single-pricing-box {
+  width: 33.3333%;
+  float: left;
+  box-shadow: 0 0 10px #f3f3f3;
+  position: relative;
+  z-index: 1;
+  background: #fff;
+  margin-top: 30px;
+}
+body {
+  color: #737678;
+  font-size: 17px;
+  line-height: 1.7;
+}
+.pricing-heading {
+  background: #f9f9f9;
+  color: #898888;
+  font-size: 17px;
+  padding: 40px;
+}
+.pricing-heading h4 {
+  color: #888888;
+  font-size: 30px;
+  font-weight: 400;
+}
+.pricing-heading h1 {
+  color: #333;
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.pricing-content ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  line-height: 35px;
+}
+.pricing-btn {
+  border: 1px solid #f91942;
+  color: #f91942;
+  display: inline-block;
+  font-weight: 600;
+  padding: 15px 30px;
+  border-radius: 50px;
+  margin-top: 30px;
+}
+.pricing-btn:hover{
+    color:#fff;
+	background: #f91942;
+}
+.active .pricing-btn:hover {
+	color: #f91942;
+	background: #fff;
+}
+.pricing-content {
+  padding: 60px;
+}
+.active .pricing-heading {
+  background: #f91942;
+  color: #fff;
+  margin-top: 0px;
+  
+}
+.active .pricing-heading h4, .active .pricing-heading h1{
+  color: #fff;
+}
+ 
+.section-padding {
+  padding: 100px 0;
+}
+.single-pricing-box.active {
+  position: relative;
+  z-index: 2;
+  margin-left: -.5%;
+  margin-right: -.5%;
+  width: 34.3333%;
+}
+.active .pricing-content {
+  padding: 73px 60px;
+}
+.pricing-heading h1::before {
+  content: "$";
+}
+.pricing-heading h1.free::before {
+  content: "$";
+  display: none;
+}
+.active a.pricing-btn {
+  background: #f91942;
+  color: #fff;
+}
+.active .pricing-heading {overflow: hidden;}
+.active .pricing-heading:after {
+  content: "Featured";
+  position: absolute;
+  right: -40px;
+  top: 20px;
+  color: #f91942;
+  background: #fff;
+  transform: rotate(45deg);
+  font-size: 14px;
+  padding: 5px 50px;
+}
+.single-pricing-box.active {
+  overflow: hidden;
+  margin-top: 0;
+}
